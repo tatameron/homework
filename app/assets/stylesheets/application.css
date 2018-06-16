@@ -1,0 +1,70 @@
+
+td{
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size:13px;
+}
+th{
+	text-align: center;
+
+}
+a{
+	color:black;
+}
+
+h2{
+	font-size: 1.5em;
+}
+h1{
+	font-size: 2em;
+}
+p{
+	font-size: 13px;
+}
+
+.single_text{
+	margin:33px;
+	font-size: 13px;
+	line-height: 18px;
+}
+.editing{
+	font-size: 13px;
+}
+.single_text2{
+	margin:33px;
+	font-size: 13px
+}
+.edittitle{
+	margin: 0;
+}
+.editbody{
+	margin:0;
+}
+.field{
+	margin-bottom: 10px;
+}
+.indextitle{
+	margin:0;
+}
+.indexbody{
+	margin: 0;
+}
+.booksmain{
+	margin:33px;
+}
+.bookersmain2{
+	margin:33px;
+}
+.bookersmain3{
+	margin:33px;
+}
+.bookersmain4{
+	margin:33px;
+}
+.success{
+	color:green;
+}
+.error{
+	color:red;
+}

@@ -1,0 +1,24 @@
+<div class="single_text">
+<h1>Editing book</h1>
+<!-- form_for部分 -->
+<%= form_for(@post) do |f| %>
+
+  <div class="field">
+   	<p class="edittitle">Title</p>
+   	<%= f.text_field :title %>
+   </div>
+   <div class="field">
+
+    <p class="editbody">Body</p>
+    <%= f.text_area :body %>
+</div>
+    <%= f.submit 'Update Book' %>
+    <br>
+    <br>
+    <%= link_to "Show", post_path(@post),class:
+    "show_#{@post.id}" %>
+|
+<%= link_to "Back", posts_path(@post),class: "back" %>
+
+</div>
+<% end %>

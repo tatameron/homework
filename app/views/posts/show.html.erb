@@ -1,0 +1,21 @@
+<% if flash[:notice] %>
+  <p class="success"><%= flash[:notice] %></p>
+<% end %>
+
+<div class="single_text2">
+<p class="single_text">
+	<strong>Title:</strong><%= @post.title %></p>
+
+
+<p class="single_text">
+   <strong>Body:</strong><%= @post.body %>
+</p>
+<!-- 追加部分 -->
+<%= link_to "Edit", edit_post_path(@post),class:
+"edit_#{@post.id}" %>
+|
+<%= link_to "Back", posts_path(@post),class:
+"back" %>
+
+</div>
+
