@@ -44,13 +44,13 @@
 <%= form_for(@post) do |f| %>
 <div class="field">
 <p class="indextitle">Title</p>
-<%= f.text_field :title %>
+<%= f.text_field :title, class: "book_title" %>
 </div>
 <div class="field">
 
 <p class="indexbody">Body</p>
 
-<%= f.text_area :body %>
+<%= f.text_area :body, class: "book_body" %>
 </div>
 <%= f.submit 'Create Book' %>
 <% if @post.errors.any? %>

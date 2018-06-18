@@ -5,12 +5,12 @@
 
   <div class="field">
    	<p class="edittitle">Title</p>
-   	<%= f.text_field :title %>
+   	<%= f.text_field :title, class: "book_title" %>
    </div>
    <div class="field">
 
     <p class="editbody">Body</p>
-    <%= f.text_area :body %>
+    <%= f.text_area :body, class: "book_body" %>
 </div>
     <%= f.submit 'Update Book' %>
     <br>

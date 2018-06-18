@@ -8,16 +8,18 @@ def new
 	@post = Post.new
 end
  def create
-        # ストロングパラメーターを使用
-         @post = Post.new(post_params)
-        # DBへ保存する
-         if @post.save
-         flash[:notice] = "Books was succesfully created."
+    # ストロングパラメーターを使用
+     @post = Post.new(post_params)
+    # DBへ保存する
+    if @post.save
+        flash[:notice] = "Books was succesfully created."
         redirect_to '/posts'
+    else
+        @posts = Post.all
+        render 'index'
     end
-    @posts = Post.all
-    render 'index'
-    end
+end
+
 def show
 	@post = Post.find(params[:id])
 end
