@@ -13,7 +13,7 @@ end
     # DBへ保存する
     if @post.save
         flash[:notice] = "Books was succesfully created."
-        redirect_to '/posts'
+        redirect_to post_path(@post)
     else
         @posts = Post.all
         render 'index'
